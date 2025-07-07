@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 type Skill = {
   name: string;
   level: number;
-  icon?: string;
+  icon: string;
 };
 
 const SkillBadge = ({ skill, index }: { skill: Skill; index: number }) => {
