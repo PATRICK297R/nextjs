@@ -1,143 +1,95 @@
-:root {
-    --bg-dark: #121212;
-    --bg-secondary: #1E1E1E;
-    --text-primary: #FFFFFF;
-    --text-secondary: #B0B0B0;
-    --accent-color: #00FFFF;
-    --gradient-primary: linear-gradient(45deg, #00FFFF, #0080FF);
-}
+export const projects = [
+  {
+    id: 1,
+    title: "E-Commerce Platform",
+    description: "A full-featured e-commerce platform with payment integration and inventory management.",
+    technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com"
+  },
+  {
+    id: 2,
+    title: "Task Management App",
+    description: "A productivity app for managing tasks with drag-and-drop interface and team collaboration features.",
+    technologies: ["Next.js", "TypeScript", "Firebase", "Tailwind CSS"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com"
+  },
+  {
+    id: 3,
+    title: "Social Media Dashboard",
+    description: "Analytics dashboard for social media performance tracking and content scheduling.",
+    technologies: ["React", "D3.js", "Express", "PostgreSQL"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com"
+  },
+  {
+    id: 4,
+    title: "Fitness Tracking App",
+    description: "Mobile-first application for tracking workouts, nutrition, and health metrics.",
+    technologies: ["React Native", "Redux", "GraphQL", "MongoDB"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com"
+  },
+  {
+    id: 5,
+    title: "Real Estate Marketplace",
+    description: "Platform for property listings with advanced search filters and virtual tours.",
+    technologies: ["Next.js", "Mapbox", "Node.js", "PostgreSQL"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com"
+  },
+  {
+    id: 6,
+    title: "Weather Forecast App",
+    description: "Real-time weather forecasting application with location-based services.",
+    technologies: ["React", "OpenWeather API", "Geolocation API", "Chart.js"],
+    githubUrl: "https://github.com",
+    liveUrl: "https://example.com"
+  }
+];
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+export const skills = [
+  { name: "JavaScript", level: 95 },
+  { name: "React", level: 90 },
+  { name: "Next.js", level: 85 },
+  { name: "TypeScript", level: 80 },
+  { name: "Node.js", level: 85 },
+  { name: "HTML/CSS", level: 90 },
+  { name: "Tailwind CSS", level: 85 },
+  { name: "GraphQL", level: 75 },
+  { name: "MongoDB", level: 80 },
+  { name: "PostgreSQL", level: 75 },
+  { name: "Docker", level: 70 },
+  { name: "AWS", level: 65 }
+];
 
-
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: var(--bg-dark);
-    color: var(--text-primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-}
-
-.container {
-    background-color: var(--bg-secondary);
-    border-radius: 20px;
-    width: 100%;
-    max-width: 400px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
-}
-
-.profile-section {
-    margin-bottom: 30px;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 4px solid var(--accent-color);
-    margin-bottom: 15px;
-}
-
-.profile-section h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    color: var(--text-secondary);
-}
-
-.action-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 12px;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: all 0.3s ease;
-    color: var(--text-primary);
-}
-
-.owner-btn {
-    background: var(--gradient-primary);
-}
-
-.community-btn {
-    background-color: rgba(0, 255, 255, 0.2);
-    border: 2px solid var(--accent-color);
-}
-
-.donate-btn {
-    background-color: rgba(255, 0, 100, 0.2);
-    border: 2px solid #FF0064;
-    color: #FF0064;
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
-}
-
-.btn i {
-    font-size: 1.2rem;
-}
-
-.qr-section {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-}
-
-.qr-code {
-    max-width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-}
-
-.download-qr {
-    background-color: var(--bg-dark);
-    border: 2px solid var(--accent-color);
-}
-
-footer {
-    margin-top: 20px;
-    text-align: center;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 15px;
-}
-
-.social-icon {
-    color: var(--text-secondary);
-    font-size: 1.5rem;
-    transition: color 0.3s ease;
-}
-
-.social-icon:hover {
-    color: var(--accent-color);
-}
+export const education = [
+  {
+    id: 1,
+    institution: "Stanford University",
+    degree: "Master of Science",
+    field: "Computer Science",
+    period: "2018 - 2020",
+    location: "Stanford, CA",
+    description: "Specialized in artificial intelligence and machine learning. Completed thesis on neural network optimization."
+  },
+  {
+    id: 2,
+    institution: "MIT",
+    degree: "Bachelor of Science",
+    field: "Software Engineering",
+    period: "2014 - 2018",
+    location: "Cambridge, MA",
+    description: "Graduated with honors. Focused on web development and distributed systems. President of Computer Science Club."
+  },
+  {
+    id: 3,
+    institution: "Harvard University",
+    degree: "Certificate",
+    field: "Data Science",
+    period: "2020",
+    location: "Cambridge, MA",
+    description: "Advanced data analysis and visualization techniques using Python and R."
+  }
+];
