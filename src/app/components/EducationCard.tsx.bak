@@ -1,0 +1,23 @@
+document.querySelector('.donate-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    const qrContainer = document.getElementById('qr-container');
+    
+    if (qrContainer.style.display === 'flex') {
+        qrContainer.style.display = 'none';
+    } else {
+        qrContainer.style.display = 'flex';
+    }
+});
+
+document.querySelector('.download-qr').addEventListener('click', function(e) {
+    e.preventDefault();
+    const konfirmasi = confirm('Unduh QR Code Donasi?');
+    
+    if (konfirmasi) {
+        const qrImage = document.querySelector('.qr-code');
+        const link = document.createElement('a');
+        link.href = qrImage.src;
+        link.download = 'ZumyNext_DonationQR.png';
+        link.click();
+    }
+});
